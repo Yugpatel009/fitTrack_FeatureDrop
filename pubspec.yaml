@@ -1,0 +1,46 @@
+name: fit_track_app
+description: A workout tracking application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Adjust SDK version if needed
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase Core for initialization
+  firebase_core: ^2.27.0 
+  # Firebase Auth for user authentication
+  firebase_auth: ^4.17.8 
+  # Cloud Firestore for database
+  cloud_firestore: ^4.15.8 
+  # For charting (example, you can choose another)
+  fl_chart: ^0.68.0 
+  # For date/time formatting (optional, but useful)
+  intl: ^0.19.0 
+  file_picker: ^6.1.1 # For picking files (import)
+  path_provider: ^2.1.2 # For getting temporary directory (export/import helper)
+  permission_handler: ^11.3.1 # For requesting storage permissions on mobile (important for path_provider on older Android/iOS)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  # Add any custom fonts here later if needed
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700
